@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="100dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:onClick="goYear"
+        android:background="@drawable/pngtree_simple_opening_learning_background_image__4">
+
+
+    <TextView
+        android:id="@+id/tvCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CO 2232"
+        android:textSize="30dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:fontFamily="@font/bauhs93"
+        android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tvSubject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:fontFamily="@font/backer_town"
+            android:gravity="center_horizontal"
+            android:text="Software Management Software Management"
+            android:textColor="@color/TextPrimary"
+            android:textSize="20sp"
+            android:letterSpacing="0.05"
+            android:lineSpacingExtra="0dp"
+            />
+
+    <TextView
+        android:id="@+id/idtemp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="60dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:onClick="goViewer"
+        android:background="@drawable/bg_item_sub_2"
+        android:elevation="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/event_black_2"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:fontFamily="@font/harrington"
+            android:text="2014/15"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:id="@+id/tvYear"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/Yid"
+            android:layout_width="0dp"
+            android:layout_height="0dp"/>
+    </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

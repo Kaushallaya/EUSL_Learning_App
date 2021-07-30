@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/iphone_6_7_8_plus__1"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_root">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/home_screen"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/ic_menu_w"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="end"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:elevation="12dp"
+                android:id="@+id/view2"
+                app:cardCornerRadius="40dp"
+                android:layout_centerHorizontal="true"
+                android:onClick="profile">
+
+                <ImageView
+                    android:layout_height="50dp"
+                    android:layout_width="50dp"
+                    android:id="@+id/ivPro"
+                    android:src="@drawable/ic_person"
+                    android:scaleType="centerCrop"/>
+
+            </androidx.cardview.widget.CardView>
+
+<!--            <ImageView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:background="@drawable/round_profile"-->
+<!--                android:onClick="profile"/>-->
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="140dp"
+        android:background="@drawable/box_trance"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome Back"
+            android:textColor="@color/colorPrimary"
+            android:textSize="40dp"
+            android:fontFamily="@font/fredokaone_regular"
+            android:layout_marginTop="50dp"
+            android:gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/home_sub_hed"
+            android:textSize="10dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:gravity="center_horizontal"/>
+
+        <AutoCompleteTextView
+            android:id="@+id/faculty"
+            android:completionThreshold="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp"
+            android:elevation="10dp"
+            android:hint="@string/faculty_Home_intxt"
+            android:textColorHint="@color/Divider"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textSize="12dp"
+            android:drawableStart="@drawable/ic_facultyp"
+            android:drawablePadding="10dp"
+            android:background="@drawable/bg_intxt"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <AutoCompleteTextView
+            android:id="@+id/degree"
+            android:completionThreshold="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:elevation="10dp"
+            android:hint="@string/degree_Home_intxt"
+            android:textColorHint="@color/Divider"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textSize="12dp"
+            android:drawableStart="@drawable/ic_degree"
+            android:drawablePadding="10dp"
+            android:background="@drawable/bg_intxt"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <AutoCompleteTextView
+            android:id="@+id/sem"
+            android:completionThreshold="0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:elevation="10dp"
+            android:hint="@string/semester_Home_intxt"
+            android:textColorHint="@color/Divider"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textSize="12dp"
+            android:drawableStart="@drawable/ic_semester"
+            android:drawablePadding="10dp"
+            android:background="@drawable/bg_intxt"
+            android:textColor="@color/colorPrimaryDark"
+            />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/bg_btn"
+            android:text="@string/btn_submit"
+            android:textColor="@color/TextPrimary"
+            android:textStyle="bold"
+            android:onClick="submit"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="100dp">
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:background="@drawable/bg_admin_btn"
+            android:drawableLeft="@drawable/ic_admin_panel_settings_white_18dp"
+            android:fontFamily="@font/eraslght"
+            android:onClick="adminPanel"
+            android:paddingLeft="80dp"
+            android:paddingRight="80dp"
+            android:text="Admin panal"
+            android:textAllCaps="false"
+            android:textColor="@color/TextPrimary"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>
